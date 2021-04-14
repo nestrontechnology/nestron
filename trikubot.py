@@ -16,15 +16,15 @@ Press Ctrl-C on the command line or send a signal to the process to stop the
 bot.
 """
 
-import logging
+#import logging
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 # Enable logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO)
+#logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+#                    level=logging.INFO)
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 
 
 # Define a few command handlers. These usually take the two arguments update and
@@ -41,10 +41,10 @@ def help(update, context):
 
 def echo(update, context):
     """Echo the user message."""
-    print(update.message.text)
+    #print(update.message.text)
     a="ayin"
     update.message.reply_text(a)#update.message.text)
-    print(update.message.text)
+    #print(update.message.text)
 
 
 def error(update, context):
